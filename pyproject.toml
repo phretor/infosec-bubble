@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "news-clustering"
+version = "0.1.0"
+description = "Cybersecurity news clustering and ranking via CyNER"
+authors = ["Federico Maggi <federico.maggi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "news_clustering"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+cyner = {git = "https://github.com/aiforsec/CyNER.git"}
+sentencepiece = "^0.1.97"
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.4"
+flake8 = "^5.0.4"
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

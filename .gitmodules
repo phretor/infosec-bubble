@@ -1,0 +1,3 @@
+[submodule "lib/cyner"]
+	path = lib/cyner
+	url = git@github.com:phretor/CyNER.git
